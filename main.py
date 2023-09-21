@@ -2,10 +2,14 @@ def main(S, d):
     '''create a babylonian function.
     
     Args:
-        S (int): number
-        d (int): numnber
+        S (int ): number
+        d (int ): numnber
         
     Returns:
         float: result
     '''
-    return
+    a = (S-d**2)/(2*d)
+    b = (a + d)
+    x = b-(a**2)/(2*d)
+    return x
+print (main(26, 5))
